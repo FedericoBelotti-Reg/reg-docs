@@ -1,0 +1,17 @@
+{
+  "name": "reg-docs",
+  "version": "0.0.1",
+  "description": "Regesta Docs",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "author": "Federico Belotti",
+  "license": "ISC",
+  "dependencies": {
+    "vitepress": "^1.0.0-rc.11",
+    "vue": "^3.3.4"
+  }
+}
