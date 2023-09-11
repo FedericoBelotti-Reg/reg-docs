@@ -1,42 +1,31 @@
 # Info
 
-Welcome to the about page.
+Non trovi qualcosa? Vuoi metterci del tuo per arricchire il know-how del reparto?  
+Modifica qualsiasi pagina di questo sito tramite GitHub e crea una pull request: qualcuno, prima o poi, accetterà le tue proposte!
 
-This markdown supports html elements like the `p` tag coupled with inline styles
+## Contatti
 
-<p style="color: #ff7340; border: 1px solid rgba(255, 135, 23, 0.25); border-radius:5px; padding: 1rem;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+<script setup>
+import {
+  VPTeamPage,
+  VPTeamMembers
+} from 'vitepress/theme'
 
-## Code
+const members = [
+  {
+    avatar: 'https://www.github.com/FedericoBelotti-Reg.png',
+    name: 'Federico Belotti',
+    title: 'Developer',
+    links: [
+      { icon: 'github', link: 'https://www.github.com/FedericoBelotti-Reg' },
+      { icon: 'linkedin', link: 'https://linkedin.com/federico.belotti' }
+    ]
+  }
+]
+</script>
 
-Even satire code snippets with syntax highlighting are also supported. 😅
-
-```js
-const lang = prompt("What is your favorite programming language?"); // [!code focus]
-
-(lang === "JavaScript") | (lang === "javascript") | (lang === "js")
-  ? alert("JavaScript to the world! 🚀🟡")
-  : alert(`We don't permit such languages here 💩`);
-```
-
-## Containers
-
-Watch out also for Custom Containers! 🙂
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
+<VPTeamPage>
+  <VPTeamMembers
+    :members="members"
+  />
+</VPTeamPage>

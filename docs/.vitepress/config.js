@@ -21,6 +21,9 @@ export default {
         link: "info",
       }
     ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/FedericoBelotti-Reg/reg-docs' }
+    ],
     sidebar: {
       "/abap/": {
         base: "/abap/",
