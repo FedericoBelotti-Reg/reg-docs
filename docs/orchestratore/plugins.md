@@ -28,13 +28,13 @@ Strategy eseguita dal `Daemon` per elaborare i dati in inbound. Ogni reader, una
 Il reader prevede inoltre la definizione di una logica per contrassegnare come **completata** o **KO** l'entità letta dalla sorgente esterna affinchè non venga rielaborata successivamente.  
 
 Questi sono gli steps del `Flow` seguiti dal `Daemon`:  
-![Flusso Reader](../public/diagrams/IDocToAny_Reader.svg)  
+![Flusso Reader](/diagrams/IDocToAny_Reader.svg)  
 
 #### Writer
 Strategy eseguita dal `Listener` per elaborare i dati dell'IDoc in outbound. Dopo l'esecuzione del mapping, il `DataSet` può essere utilizzato all'interno della strategy per mandare dati all'esterno, scriverli su file o in un database.  
 
 Questi sono gli steps del `Flow` seguiti dal `Listener`:  
-![Flusso Writer](../public/diagrams/IDocToAny_Writer.svg)  
+![Flusso Writer](/diagrams/IDocToAny_Writer.svg)  
 
 #### Mapper
 Strategy che prevede due metodi `MapIDocToDataSet` e `MapDataSetToIDoc` chiamati rispettivamente dal `Listener` e dal `Daemon`. Nel caso del `Listener` verranno quindi messi a disposizione i dati dell'IDoc per poter essere mappati, restituendo un oggetto `DataSet`  

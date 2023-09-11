@@ -13,18 +13,13 @@ export default {
     siteTitle: "/REG/Docs",
     nav: [
       {
-        text: "ABAP",
-        link: "/abap/get-started",
-        activeMatch: "abap",
+        text: "Get started",
+        link: "get-started",
       },
       {
-        text: "CDS",
-        link: "cds",
-      },
-      {
-        text: "Orchestratore",
-        link: "/orchestratore/get-started",
-      },
+        text: "Info",
+        link: "info",
+      }
     ],
     sidebar: {
       "/abap/": {
@@ -36,6 +31,10 @@ export default {
               {
                 text: "Get Started",
                 link: "get-started",
+              },
+              {
+                text: "CDS",
+                link: "cds/get-started",
               },
               {
                 text: "Dynamic Programming",

@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide
+      link: /get-started
     - theme: alt
       text: View on GitHub
       link: https://github.com/FedericoBelotti-Reg/reg-docs
