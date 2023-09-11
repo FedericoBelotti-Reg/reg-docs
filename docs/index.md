@@ -5,8 +5,8 @@ layout: home
 hero:
   name: /REG/Docs
   image:
-    src: https://cap.cloud.sap/docs/assets/logos/cap.svg
-    alt: Adocs logo
+    light: /logo_light.svg
+    dark: /logo_dark.svg
   tagline: Documentazione DEV
   actions:
     - theme: brand
@@ -21,12 +21,12 @@ features:
   - icon: ⚙️
     title: ABAP
     details: Can't live with it, can't live without it...
-    link: abap
+    link: /abap/get-started
   - icon: 
       src: /csharp.svg
     title: Orchestratore
     details: Il nostro middleware per lo scambio dati tra SAP e sistemi esterni.
-    link: orchestratore
+    link: /orchestratore/get-started
 
 # Meta property
 head:

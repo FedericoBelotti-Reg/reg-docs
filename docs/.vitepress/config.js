@@ -1,29 +1,76 @@
 export default {
   title: "/REG/Docs",
-  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+  head: [["link", { rel: "icon", href: "/logo_dark.svg" }]],
+  cleanUrls: true,
   themeConfig: {
-    logo: "https://www.regestaitalia.eu/wp-content/uploads/2019/04/icona-regesta-icona-regesta@0.5x-2.png",
+    logo: {
+      dark: "/logo_dark.svg",
+      light: "/logo_light.svg",
+    },
     search: {
-      provider: 'local'
+      provider: "local",
     },
     siteTitle: "/REG/Docs",
     nav: [
       {
         text: "ABAP",
-        link: "/abap"
+        link: "/abap/get-started",
+        activeMatch: "abap",
+      },
+      {
+        text: "CDS",
+        link: "cds",
       },
       {
         text: "Orchestratore",
-        link: "/orchestratore"
-      }
+        link: "/orchestratore/get-started",
+      },
     ],
-    footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright © 2022-present Adocs",
+    sidebar: {
+      "/abap/": {
+        base: "/abap/",
+        items: [
+          {
+            text: "ABAP",
+            items: [
+              {
+                text: "Get Started",
+                link: "get-started",
+              },
+              {
+                text: "Dynamic Programming",
+                link: "dynamic-programming",
+              },
+              {
+                text: "Pillole",
+                link: "pillole",
+              },
+            ],
+          },
+        ],
+      },
+      "/orchestratore/": {
+        base: "/orchestratore/",
+        items: [
+          {
+            text: "Orchestratore",
+            items: [
+              {
+                text: "Get Started",
+                link: "get-started",
+              },
+              {
+                text: "Plugins",
+                link: "plugins",
+              },
+            ],
+          },
+        ],
+      },
     },
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-      text: 'Edit this page on GitHub'
-    }
+      pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",
+      text: "Modifica questa pagina su GitHub",
+    },
   },
-}
+};
