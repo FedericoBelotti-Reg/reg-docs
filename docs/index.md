@@ -18,7 +18,8 @@ hero:
 
 # Features section
 features:
-  - icon: ⚙️
+  - icon: 
+      src: /abap_logo.svg
     title: ABAP
     details: Can't live with it, can't live without it...
     link: /abap/get-started
